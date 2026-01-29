@@ -58,6 +58,9 @@ onMounted(() => {
           <li><strong>Cientos</strong> - Ready-to-use 3D components</li>
           <li><strong>Pinia</strong> - State management for complex scenes</li>
         </ul>
+        <NuxtLink to="/examples" class="explore-link">
+          Explore Interactive Examples →
+        </NuxtLink>
       </div>
 
       <div class="card">
@@ -161,6 +164,23 @@ onMounted(() => {
 
 .card strong {
   color: #a78bfa;
+}
+
+.explore-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.explore-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
 @media (max-width: 768px) {
